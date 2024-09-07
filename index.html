@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Core Python Topics</title>
+    <link rel="stylesheet" href="index_css.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Core Python Topics</h1>
+        </div>
+    </header>
+    <div class="layout">
+        <nav class="sidebar">
+            <div class="nav-buttons">
+                <a href="#basic-concepts" onclick="showContent('basic-concepts')">Basic Concepts</a>
+                <a href="#data-types" onclick="showContent('data-types')">Data Types</a>
+                <a href="#operators" onclick="showContent('operators')">Operators</a>
+                <a href="#control-flow" onclick="showContent('control-flow')">Control Flow</a>
+                <a href="#functions" onclick="showContent('functions')">Functions</a>
+                <a href="#modules-packages" onclick="showContent('modules-packages')">Modules & Packages</a>
+                <a href="#exception-handling" onclick="showContent('exception-handling')">Exception Handling</a>
+                <a href="#file-handling" onclick="showContent('file-handling')">File Handling</a>
+                <a href="#data-structures" onclick="showContent('data-structures')">Data Structures</a>
+                <a href="#oop" onclick="showContent('oop')">OOP</a>
+                <a href="#iterators-generators" onclick="showContent('iterators-generators')">Iterators & Generators</a>
+                <a href="#regex" onclick="showContent('regex')">Regular Expressions</a>
+                <a href="#lambda-functional" onclick="showContent('lambda-functional')">Lambda & Functional</a>
+                <a href="#concurrency-parallelism" onclick="showContent('concurrency-parallelism')">Concurrency & Parallelism</a>
+                <a href="#networking-web" onclick="showContent('networking-web')">Networking & Web</a>
+                <a href="#database-access" onclick="showContent('database-access')">Database Access</a>
+                <a href="#testing-debugging" onclick="showContent('testing-debugging')">Testing & Debugging</a>
+                <a href="#python-3" onclick="showContent('python-3')">Python 3 Features</a>
+                <a href="#best-practices" onclick="showContent('best-practices')">Best Practices</a>
+            </div>
+        </nav>
+        <main class="content">
+            <section id="basic-concepts" class="section-content">
+                <h2>Basic Concepts</h2>
+                <h3>Introduction to Python</h3>
+                <p>History, features, and Python versions.</p>
+                <h3>Syntax and Semantics</h3>
+                <p>Basic syntax rules and conventions.</p>
+                <h3>Comments</h3>
+                <p>Single-line and multi-line comments.</p>
+            </section>
+            <!-- Repeat for other sections -->
+        </main>
+    </div>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Core Python Topics. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        function showContent(id) {
+            document.querySelectorAll('.section-content').forEach(section => {
+                section.style.display = 'none';
+            });
+            document.getElementById(id).style.display = 'block';
+        }
+
+        // Show the first section by default
+        showContent('basic-concepts');
+    </script>
+</body>
+</html>
