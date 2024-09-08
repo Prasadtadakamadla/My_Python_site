@@ -46,24 +46,226 @@
                 <h3>Comments</h3>
                 <p>Single-line and multi-line comments.</p>
             </section>
-            <!-- Repeat for other sections -->
+            <!-- Other sections -->
+
+            <section id="functions" class="section-content">
+                <h2>Functions</h2>
+                <h3>List Functions</h3>
+                <ul>
+                    <li>
+                        <code>list.append(x)</code>: Adds an item <code>x</code> to the end of the list.
+                        <img src="images/list_append.png" alt="list.append() Example" class="example-img">
+                    </li>
+                    <li>
+                        <code>list.extend(iterable)</code>: Extends the list by appending elements from an iterable.
+                        <img src="images/list_extend.png" alt="list.extend() Example" class="example-img">
+                    </li>
+                    <li>
+                        <code>list.insert(index, x)</code>: Inserts an item <code>x</code> at a specified position <code>index</code>.
+                        <img src="images/list_insert.png" alt="list.insert() Example" class="example-img">
+                    </li>
+                    <li>
+                        <code>list.remove(x)</code>: Removes the first occurrence of an item <code>x</code> from the list. Raises a <code>ValueError</code> if the item is not found.
+                        <img src="images/list_remove.png" alt="list.remove() Example" class="example-img">
+                    </li>
+                    <li>
+                        <code>list.pop([index])</code>: Removes and returns the item at the specified position <code>index</code> in the list. If no index is specified, it removes and returns the last item.
+                        <img src="images/list_pop.png" alt="list.pop() Example" class="example-img">
+                    </li>
+                    <li>
+                        <code>list.clear()</code>: Removes all items from the list.
+                        <img src="images/list_clear.png" alt="list.clear() Example" class="example-img">
+                    </li>
+                    <li>
+                        <code>list.index(x[, start[, end]])</code>: Returns the index of the first occurrence of an item <code>x</code>. Raises a <code>ValueError</code> if the item is not found.
+                        <img src="images/list_index.png" alt="list.index() Example" class="example-img">
+                    </li>
+                    <li>
+                        <code>list.count(x)</code>: Returns the number of occurrences of an item <code>x</code> in the list.
+                        <img src="images/list_count.png" alt="list.count() Example" class="example-img">
+                    </li>
+                    <li>
+                        <code>list.sort(key=None, reverse=False)</code>: Sorts the items of the list in place.
+                        <img src="images/list_sort.png" alt="list.sort() Example" class="example-img">
+                    </li>
+                    <li>
+                        <code>list.reverse()</code>: Reverses the elements of the list in place.
+                        <img src="images/list_reverse.png" alt="list.reverse() Example" class="example-img">
+                    </li>
+                    <li>
+                        <code>list.copy()</code>: Returns a shallow copy of the list.
+                        <img src="images/list_copy.png" alt="list.copy() Example" class="example-img">
+                    </li>
+                </ul>
+
+                <h3>Tuple Functions</h3>
+                <ul>
+                    <li>
+                        <code>tuple.count(value)</code>: Returns the number of times <code>value</code> appears in the tuple.
+                        <img src="images/tuple_count.png" alt="tuple.count() Example" class="example-img">
+                    </li>
+                    <li>
+                        <code>tuple.index(value[, start[, end]])</code>: Returns the index of the first occurrence of <code>value</code>. Raises a <code>ValueError</code> if the value is not found.
+                        <img src="images/tuple_index.png" alt="tuple.index() Example" class="example-img">
+                    </li>
+                </ul>
+
+                <h3>Set Functions</h3>
+                <ul>
+                    <li>
+                        <code>set.add(elem)</code>: Adds an element <code>elem</code> to the set. If the element is already present, it does nothing.
+                        <img src="images/set_add.png" alt="set.add() Example" class="example-img">
+                    </li>
+                    <li>
+                        <code>set.clear()</code>: Removes all elements from the set.
+                        <img src="images/set_clear.png" alt="set.clear() Example" class="example-img">
+                    </li>
+                    <li>
+                        <code>set.copy()</code>: Returns a shallow copy of the set.
+                        <img src="images/set_copy.png" alt="set.copy() Example" class="example-img">
+                    </li>
+                    <li>
+                        <code>set.discard(elem)</code>: Removes an element <code>elem</code> from the set if it is present. Does nothing if the element is not found.
+                        <img src="images/set_discard.png" alt="set.discard() Example" class="example-img">
+                    </li>
+                    <li>
+                        <code>set.remove(elem)</code>: Removes an element <code>elem</code> from the set. Raises a <code>KeyError</code> if the element is not found.
+                        <img src="images/set_remove.png" alt="set.remove() Example" class="example-img">
+                    </li>
+                    <li>
+                        <code>set.pop()</code>: Removes and returns an arbitrary element from the set. Raises a <code>KeyError</code> if the set is empty.
+                        <img src="images/set_pop.png" alt="set.pop() Example" class="example-img">
+                    </li>
+                    <li>
+                        <code>set.union(*others)</code>: Returns a new set with elements from the set and all others.
+                        <img src="images/set_union.png" alt="set.union() Example" class="example-img">
+                    </li>
+                    <li>
+                        <code>set.intersection(*others)</code>: Returns a new set with elements common to the set and all others.
+                        <img src="images/set_intersection.png" alt="set.intersection() Example" class="example-img">
+                    </li>
+                    <li>
+                        <code>set.difference(*others)</code>: Returns a new set with elements in the set that are not in the others.
+                        <img src="images/set_difference.png" alt="set.difference() Example" class="example-img">
+                    </li>
+                    <li>
+                        <code>set.symmetric_difference(other)</code>: Returns a new set with elements in either the set or other but not in both.
+                        <img src="images/set_symmetric_difference.png" alt="set.symmetric_difference() Example" class="example-img">
+                    </li>
+                    <li>
+                        <code>set.issubset(other)</code>: Returns <code>True</code> if all elements of the set are in <code>other</code>. Otherwise, returns <code>False</code>.
+                        <img src="images/set_issubset.png" alt="set.issubset() Example" class="example-img">
+                    </li>
+                    <li>
+                        <code>set.issuperset(other)</code>: Returns <code>True</code> if all elements of <code>other</code> are in the set. Otherwise, returns <code>False</code>.
+                        <img src="images/set_issuperset.png" alt="set.issuperset() Example" class="example-img">
+                    </li>
+                    <li>
+                        <code>set.isdisjoint(other)</code>: Returns <code>True</code> if the set has no elements in common with <code>other</code>. Otherwise, returns <code>False</code>.
+                        <img src="images/set_isdisjoint.png" alt="set.isdisjoint() Example" class="example-img">
+                    </li>
+                    <li>
+                        <code>set.update(*others)</code>: Updates the set with elements from <code>others</code>. This is equivalent to <code>set = set.union(*others)</code>.
+                        <img src="images/set_update.png" alt="set.update() Example" class="example-img">
+                    </li>
+                    <li>
+                        <code>set.intersection_update(*others)</code>: Updates the set with the intersection of itself and <code>others</code>. This is equivalent to <code>set = set.intersection(*others)</code>.
+                        <img src="images/set_intersection_update.png" alt="set.intersection_update() Example" class="example-img">
+                    </li>
+                    <li>
+                        <code>set.difference_update(*others)</code>: Updates the set by removing elements found in <code>others</code>. This is equivalent to <code>set = set.difference(*others)</code>.
+                        <img src="images/set_difference_update.png" alt="set.difference_update() Example" class="example-img">
+                    </li>
+                    <li>
+                        <code>set.symmetric_difference_update(other)</code>: Updates the set with elements in either the set or <code>other</code> but not in both. This is equivalent to <code>set = set.symmetric_difference(other)</code>.
+                        <img src="images/set_symmetric_difference_update.png" alt="set.symmetric_difference_update() Example" class="example-img">
+                    </li>
+                </ul>
+
+                <h3>Dictionary Functions</h3>
+                <ul>
+                    <li>
+                        <code>dict.clear()</code>: Removes all items from the dictionary.
+                        <img src="images/dict_clear.png" alt="dict.clear() Example" class="example-img">
+                    </li>
+                    <li>
+                        <code>dict.copy()</code>: Returns a shallow copy of the dictionary.
+                        <img src="images/dict_copy.png" alt="dict.copy() Example" class="example-img">
+                    </li>
+                    <li>
+                        <code>dict.fromkeys(seq[, value])</code>: Creates a new dictionary with keys from <code>seq</code> and values set to <code>value</code> (or <code>None</code> if not provided).
+                        <img src="images/dict_fromkeys.png" alt="dict.fromkeys() Example" class="example-img">
+                    </li>
+                    <li>
+                        <code>dict.get(key[, default])</code>: Returns the value for the specified key if the key is in the dictionary; otherwise, returns <code>default</code> (or <code>None</code> if not provided).
+                        <img src="images/dict_get.png" alt="dict.get() Example" class="example-img">
+                    </li>
+                    <li>
+                        <code>dict.items()</code>: Returns a view object that displays a list of a dictionary's key-value tuple pairs.
+                        <img src="images/dict_items.png" alt="dict.items() Example" class="example-img">
+                    </li>
+                    <li>
+                        <code>dict.keys()</code>: Returns a view object that displays a list of all the keys in the dictionary.
+                        <img src="images/dict_keys.png" alt="dict.keys() Example" class="example-img">
+                    </li>
+                    <li>
+                        <code>dict.pop(key[, default])</code>: Removes the specified key and returns the corresponding value. If the key is not found and <code>default</code> is not provided, raises a <code>KeyError</code>.
+                        <img src="images/dict_pop.png" alt="dict.pop() Example" class="example-img">
+                    </li>
+                    <li>
+                        <code>dict.popitem()</code>: Removes and returns the last key-value pair as a tuple. Raises a <code>KeyError</code> if the dictionary is empty.
+                        <img src="images/dict_popitem.png" alt="dict.popitem() Example" class="example-img">
+                    </li>
+                    <li>
+                        <code>dict.setdefault(key[, default])</code>: Returns the value for the specified key. If the key is not present, inserts the key with a value of <code>default</code> and returns <code>default</code>.
+                        <img src="images/dict_setdefault.png" alt="dict.setdefault() Example" class="example-img">
+                    </li>
+                    <li>
+                        <code>dict.update([other])</code>: Updates the dictionary with the key-value pairs from <code>other</code>, overwriting existing keys.
+                        <img src="images/dict_update.png" alt="dict.update() Example" class="example-img">
+                    </li>
+                </ul>
+
+                <h3>String Functions</h3>
+                <ul>
+                    <li>
+                        <code>str.upper()</code>: Converts all characters in the string to uppercase.
+                        <img src="images/str_upper.png" alt="str.upper() Example" class="example-img">
+                    </li>
+                    <li>
+                        <code>str.lower()</code>: Converts all characters in the string to lowercase.
+                        <img src="images/str_lower.png" alt="str.lower() Example" class="example-img">
+                    </li>
+                    <li>
+                        <code>str.capitalize()</code>: Capitalizes the first character of the string and lowercases all other characters.
+                        <img src="images/str_capitalize.png" alt="str.capitalize() Example" class="example-img">
+                    </li>
+                    <li>
+                        <code>str.title()</code>: Capitalizes the first character of each word in the string.
+                        <img src="images/str_title.png" alt="str.title() Example" class="example-img">
+                    </li>
+                    <li>
+                        <code>str.strip([chars])</code>: Removes leading and trailing whitespace or specified characters.
+                        <img src="images/str_strip.png" alt="str.strip() Example" class="example-img">
+                    </li>
+                    <li>
+                        <code>str.lstrip([chars])</code>: Removes leading whitespace or specified characters.
+                        <img src="images/str_lstrip.png" alt="str.lstrip() Example" class="example-img">
+                    </li>
+                    <li>
+                        <code>str.rstrip([chars])</code>: Removes trailing whitespace or specified characters.
+                        <img src="images/str_rstrip.png" alt="str.rstrip() Example" class="example-img">
+                    </li>
+                    <li>
+                        <code>str.find(substring[, start[, end]])</code>: Returns the lowest index of the substring if it is found.
+                        <img src="images/str_find.png" alt="str.find() Example" class="example-img">
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Other sections -->
         </main>
     </div>
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Core Python Topics. All rights reserved.</p>
-        </div>
-    </footer>
-    <script>
-        function showContent(id) {
-            document.querySelectorAll('.section-content').forEach(section => {
-                section.style.display = 'none';
-            });
-            document.getElementById(id).style.display = 'block';
-        }
-
-        // Show the first section by default
-        showContent('basic-concepts');
-    </script>
+    <script src="index_js.js"></script>
 </body>
 </html>
